@@ -2,3 +2,20 @@
   margin: 0;
   padding: 0;
 }
+
+
+:root {
+  --primary: #1f3a3e;
+  --primary-dark: #172d30;
+  --primary-light: #2b4d51;
+
+  --white: #ffffff;
+  --white-soft: #f5f7f7;
+
+  --text-dark: #1f3a3e;
+  --text-muted: #718084;
+
+  --border: #dce4e5;
+  --background: #f6f8f8;
+}
+
