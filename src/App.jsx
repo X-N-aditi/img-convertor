@@ -1,17 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignUpPage';
+import VerifyOTP from './pages/VerifyOTP';
+import PasswordPage from './pages/PasswordPage';
+import DashboardPage from './pages/DashboardPage';
 import './App.css'
 
 function App() {
 
   return (
     <>
-      <h1>Image convertor</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/verify" element={<VerifyOTP />} />
+          <Route path="/password" element={<PasswordPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+        </Routes>
+      </BrowserRouter>
 
-      <p>Welcome to Image convertor, Please find your refrence here.</p>
-      <B> img convertor </B>
     </>
   )
 }
